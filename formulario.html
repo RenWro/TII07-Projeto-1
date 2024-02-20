@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Criando Formulários em HTML-->
+    <!--método GET - envio público-->
+    <!--Método POST - envio privado-->
+    <!-- ação de onde os dados do formulário será gravado ou enviado-->
+    <form method="post" action="valida-form.html">
+        <label>Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+        <hr>
+        <label>Email:</label>
+        <input type="email"name="email" placeholder="Digite o seu email" required>
+        <hr>
+        <label>Senha</label>
+        <input type="password" name="senha" placeholder="Digite sua senha" required>
+        <hr>
+        <h3>Selecione os itens que te agradam:</h3>
+        <input type="checkbox" name="favoritos-1" value="acao"><label>Ação</label><br>
+        <input type="checkbox" name="favoritos-2" value="comedia"><label>Comédia</label><br>
+        <input type="checkbox" name="favoritos-3" value="terror"><label>Terror</label>
+        <hr>
+        <h3>Selecione sua faixa etária:</h3>
+        <input type="radio" name="idade" value="18_25"><label>18 à 25</label><br>
+        <input type="radio" name="idade" value="26_35"><label>26 à 35</label><br>
+        <input type="radio" name="idade" value="36_45"><label>36 à 45</label><br>
+        <input type="radio" name="idade" value="46_55"><label>46 à 55</label><br>
+        <input type="radio" name="idade" value="56+"><label>56 ou +</label><br>
+        <hr>
+        <label>Selecione uma cidade</label>
+        <select name="cidade">
+            <option value="#" selected> - Selecione - </option>
+            <option value="sao_paulo">São Paulo</option>
+            <option value="osasco">Osasco</option>
+            <option value="guarulhos">Guarulhos</option>
+            <option value="sao_bernardo_do_campo">São Bernardo do Campo</option>
+            <option value="santo_andre">Santo André</option>
+            <option value="sao_caetano">São Caetano</option>
+            <option value="diadema">Diadema</option>
+        </select>
+        <hr>
+        <label>Selecione um Estado (UF):</label>
+        <select name="uf"size="2">
+            <!-- size para a listbox determinar quantos itens vai exibir ao mesmo tempo-->
+            <option value="ac">AC</option>
+            <option value="al">AL</option>
+            <option value="am">AM</option>
+            <option value="ap">AP</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="df">DF</option>
+            <option value="es">ES</option>
+            <option value="go">GO</option>
+            <option value="ma">MA</option>
+            <option value="mg">MG</option>
+            <option value="ms">MS</option>
+            <option value="mt">MT</option>
+            <option value="pa">PA</option>
+            <option value="pb">PB</option>
+            <option value="pe">PE</option>
+            <option value="pi">PI</option>
+            <option value="pr">PR</option>
+            <option value="rj">RJ</option>
+            <option value="rn">RN</option>
+            <option value="ro">RO</option>
+            <option value="rr">RR</option>
+            <option value="rs">RS</option>
+            <option value="sc">SC</option>
+            <option value="se">SE</option>
+            <option value="sp">SP</option>
+            <option value="to">TO</option>
+
+        </select>
+        <hr>
+        <label>Data de nascimento:</label>
+        <input type="date" name="dt_nasc">
+        <hr>
+        <label>Data e hora da consulta médica:</label>
+        <input type="datetime-local" name="dt_consulta">
+        <hr>
+        <label>Quantidade entre (0 e 10):</label>
+        <input type="number" name="quantidade_itens" min="0" max="10">
+        <hr>
+        <label>Avaliação:</label>
+        Pouco satisfeito
+        <input type="range" name="satisfacao" min="0" max="10">
+        Muito satisfeito
+        <hr>
+        <label>Descreva o assunto:</label>
+        <textarea name="assunto"></textarea>
+        <!--passando dado oculto-->
+        <input type="hidden" name="contrato" value="Aceito lógico">
+        <!--value seria o texto a ser exibido no botao-->
+        <hr>
+        <input type="reset" value="Limpar">
+        <input type="submit" name="envio-form" value="Enviar Já!!!">
+
+
+
+        <!--<br> = break-->
+        <hr>
+    </form>
+    
+</body>
+</html>
