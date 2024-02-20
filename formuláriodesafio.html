@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Desafio</title>
+</head>
+<body>
+    <form method="post" action="valida-form.html">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu primeiro nome" required>
+        <label>Sobrenome:</label>
+        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+        <hr>
+        <label>Endereço:</label>
+        <input type="text" name="endereco" placeholder="Digite seu endereço" required>
+        <label>Número:</label>
+        <input type="number" name="numero" placeholder="Digite seu número" required>
+        <label>Complemento:</label>
+        <input type="text" name="complemento" placeholder="(se houver)">
+        <hr>
+        <label>Bairro:</label>
+        <input type="text" name="bairro" placeholder="Digite seu bairro" required>
+        <label>Cidade:</label>
+        <input type="text" name="cidade" placeholder="Digite sua cidade" required>
+        <label>CEP:</label>
+        <input type="number" name="cep" placeholder="Digite seu CEP" required>
+        <hr>
+        <label>Selecione um Estado (UF):</label>
+        <select name="uf"size="3">
+            <option value="ac">AC</option>
+            <option value="al">AL</option>
+            <option value="am">AM</option>
+            <option value="ap">AP</option>
+            <option value="ba">BA</option>
+            <option value="ce">CE</option>
+            <option value="df">DF</option>
+            <option value="es">ES</option>
+            <option value="go">GO</option>
+            <option value="ma">MA</option>
+            <option value="mg">MG</option>
+            <option value="ms">MS</option>
+            <option value="mt">MT</option>
+            <option value="pa">PA</option>
+            <option value="pb">PB</option>
+            <option value="pe">PE</option>
+            <option value="pi">PI</option>
+            <option value="pr">PR</option>
+            <option value="rj">RJ</option>
+            <option value="rn">RN</option>
+            <option value="ro">RO</option>
+            <option value="rr">RR</option>
+            <option value="rs">RS</option>
+            <option value="sc">SC</option>
+            <option value="se">SE</option>
+            <option value="sp"selected>SP</option>
+            <option value="to">TO</option>
+        </select>
+        <hr>
+        <label>Data e hora da consulta médica:</label>
+        <input type="datetime-local" name="dt_consulta">
+        <hr>
+        <label>RG:</label>
+        <input type="number" name="rg" placeholder="Digite seu RG" required>
+        <label>CPF:</label>
+        <input type="number" name="cpf" placeholder="Digite seu CPF" required>
+        <hr>
+        <label>Nome da mãe:</label>
+        <input type="text" name="nome_mae" placeholder="Digite o nome completo da sua mãe" required>
+        <hr>
+        <label>Nome do pai:</label>
+        <input type="text" name="nome_pai" placeholder="Digite o nome completo do seu pai">
+        <hr>
+        <label>Sexo:</label>
+        <select name="sexo"size="3">
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="nb">Não-binário</option>
+            <option value="ni">Prefiro não informar</option>
+        </select>
+        <hr>
+        <label>Nível de satisfação:</label>
+        Pouco satisfeito
+        <input type="range" name="satisfacao" min="0" max="5">
+        Muito satisfeito
+        <hr>
+        <hr>
+        <label>Escolaridade</label>
+        <select name="escolaridade"size="3">
+            <option value="fund">Ensino Fundamental</option>
+            <option value="med">Ensino Médio</option>
+            <option value="sup">Ensino Superior</option>
+        </select>
+        <hr>
+        <input type="reset" value="Limpar">
+        <input type="submit" name="envio-form" value="Enviar">
+
+
+    </form>
+    
+</body>
+</html>
