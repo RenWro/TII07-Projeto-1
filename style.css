@@ -1,0 +1,384 @@
+      /* 
+    Configuração das estruturas das péginas do website
+    Data 22/02/2024
+    Autor:Ren Wrobleski
+    Versão: 1.1
+    Nesta versão teremos os breakpoints para o resposnivo
+*/
+/* CSS publico*/
+#pagina,#cabecalho,#corpo,#rodape,#logo-topo,#menu-topo,#icone-topo,#banner,#imagens,.fotos,#logo-base{float: left;}
+/*break point´s - bootstrap | 576px - 578px - 992px - 1200px -1400px*/
+/*tela indisponivel*/
+@media only screen and (max-width:291.99px){
+    body{background: #000;}
+    }
+
+/*tela smartphone mine de 292px até 497.99px*/
+@media only screen and (min-width:292px) and (max-width:479.99px){
+        body{background: #0f0;}
+        #pagina{
+            width: 96%;
+            min-height: 800px;
+            padding: 2%;
+            background: #000;
+        }
+        #pagina #cabecalho{
+            width:100%;
+            background: #fff;
+        }
+        #pagina #cabecalho #logo-topo{
+            width: 150px;
+            height: 100px;
+            background:#09f;
+        }
+        #pagina #cabecalho #menu-topo{
+            width: 90px;
+            height: 90px;
+            background: #09f;
+            float: right;
+            margin: 5px;
+        }
+        #pagina #cabecalho #icone-topo{display:none;}
+        #pagina #corpo{
+            width: 100%;
+            margin: 10px 0px;
+            background: #f00;
+        }
+        #pagina #corpo #banner{
+            width: 100%;
+            height: 230px;
+            background: #fff;
+        }
+        #pagina #corpo #imagens{
+            width: 100%;
+        }
+        #pagina #corpo #imagens .fotos{
+            width: 45%;
+            height: 140px;
+            background: #fff;
+            margin: 2.5%;
+        }
+        #pagina #corpo #informacoes{
+            width: 100%;
+            background: #fff;
+        }
+        #pagina #corpo #informacoes .foto-info{
+            width: 100%;
+            min-height: 200px;
+            margin-top: 5px;
+            float: left;
+            background: #ff0;
+        }
+        #pagina #corpo #informacoes .texto-info{
+            width: 100%;
+            min-height: 200px;
+            margin-top: 5px;
+            float: left;
+            background: #ff0;
+        }
+        #pagina #rodape{
+            width: 100%;
+            background: #fff;
+        }
+        #pagina #rodape #logo-base{
+            width: 47%;
+            height: 100px;
+            background: #00f;
+        }
+        #pagina #rodape #texto-base{display: none;}
+        #pagina #rodape #icone-base{
+            width: 47%;
+            height: 100px;
+            float: right;
+            background: #00f;
+        }
+}
+/*tela smartphone largo de 480px até 599.99px*/
+#pagina,#cabecalho,#corpo,#rodape,#logo-topo,#menu-topo,#icone-topo,#banner,#imagens,.fotos,#logo-base,
+.foto-info,.texto-info
+{float: left;}
+@media only screen and (min-width:480px) and (max-width:599.99px){
+    body{background: #0ff;}
+    #pagina{
+        width: 96%;
+        min-height: 2%;
+        padding: 2%;
+        background: #000;
+    }
+    #pagina #cabecalho{
+        width: 100%;
+        background: #fff;
+    }
+    #pagina #cabecalho #logo-topo{
+        width: 150px;
+        height: 150px;
+        background: #09f;
+    }
+    #pagina #cabecalho #menu-topo{
+        width: 150px;
+        height: 140px;
+        background: #09f;
+        float: right;
+        margin: 5px;
+    }
+    #pagina #cabecalho #icone-topo{display: none;}
+    #pagina #corpo{
+        width: 100%;
+        margin: 10px 0px;
+        background: #f00;
+    }
+    #pagina #corpo #banner{
+        width: 100%;
+        height: 230px;
+        background: #fff;
+    }
+    #pagina #corpo #imagens{
+        width: 100%;
+    }
+    #pagina #corpo #imagens .fotos{
+        width: 45%;
+        height: 130px;
+        background: #fff;
+        margin: 2.5%;
+    }
+    #pagina #corpo #informacoes{
+        width: 100%;
+        background: #fff;
+    }
+    #pagina #corpo #informacoes .foto-info{
+        width: 100%;
+        min-height: 200px;
+        margin-top: 5px;
+        float: left;
+        background: #ff0;
+    }
+    #pagina #corpo #informacoes .texto-info{
+        width: 100%;
+        min-height: 200px;
+        margin-top: 5px;
+        float: left;
+        background: #ff0;
+        }
+    #pagina #rodape{
+        width: 100%;
+        background: #fff;
+        }
+    #pagina #rodape #logo-base{
+        width: 47%;
+        height: 100px;
+        background: #00f;
+    }
+    #pagina #rodape #texto-base{display: none;}
+    #pagina #rodape #icone-base{
+        width: 47%;
+        height: 100px;
+        float: right;
+        background: #00f;
+    }
+}
+/*tela de 600px até 799.99px*/
+#pagina,#cabecalho,#corpo,#rodape,#logo-topo,#menu-topo,#icone-topo,#banner,#imagens,.fotos,#logo-base,.foto-info,.texto.info,
+.foto-info,.texto-info
+{float: left;}
+@media only screen and (min-width:600px) and (max-width:799.99px){
+    body{background: #ff0;}
+        #pagina{
+        width: 96%;
+        min-height: 800px;
+        padding: 2%;
+        background: #000;
+        }
+        #pagina #cabecalho{
+            width: 100%;
+            background:#fff;
+        }
+        #pagina #cabecalho #logo-topo{
+            width: 150px;
+            height: 125px;
+            background:#09f;
+        }
+        #pagina #cabecalho #menu-topo{
+            width: 150px;
+            height: 110px;
+            margin: 5px;
+            float: right;
+            background: #09f;
+        }
+        #pagina #cabecalho #icone-topo{display: none;}
+        #pagina #corpo{
+            width: 100%;
+            margin: 10px 0px;
+            background: #f00;
+        }
+        #pagina #corpo #banner{
+            width: 100%;
+            height: 200px;
+            background: #fff;
+        }
+        #pagina #corpo #imagens{
+            width: 100%;
+        }
+        #pagina #corpo #imagens .fotos{
+            width: 45%;
+            height: 140px;
+            margin: 2.5%;
+            background: #fff;
+        }
+        #pagina #corpo #informacoes{
+            width: 100%;
+            background: #f00;
+        }
+        #pagina #corpo #informacoes .foto-info{
+            width: 100%;
+            height: 200px;
+            margin-top: 5px;
+            background: #ff0;
+        }
+        #pagina #corpo #informacoes .texto-info{
+            width: 100%;
+            min-height: 200px;
+            margin-top:5px ;
+            background: #ff0;
+        }
+        #pagina #rodape{
+            width: 100%;
+            background: #fff;
+        }
+        #pagina #rodape #logo-base{
+            width: 47%;
+            height: 100px;
+            background:#00f;
+        }
+        #pagina #rodape #texto-base{display: none;}
+        #pagina #rodape #icone-base{
+            width: 47%;
+            height: 100px;
+            float: right;
+            background: #00f;
+        }
+}
+/*tela tablet de 800px até 1199.99px*/
+@media only screen and (min-width:800px) and (max-width:1199.99px){
+    body{
+        background: #f0f;
+    
+    }
+}
+/*tela tablet de 1200px até 1379.99px*/
+@media only screen and (min-width:1200px) and (max-width:1379.99px){
+    body{
+        background: #f00;
+    
+    }
+}
+/* tela grande acima de 1380px */
+@media only screen and (min-width:1380px){
+    
+    #pagina{
+        width: 1200px;
+        min-height: 940px;
+        float: left;
+        position: relative;
+        left: 50%;
+        margin-left: -600px;
+        background: #ffff00;
+    }
+    #pagina #cabecalho{
+        width: 100%;
+        float: left;
+        background: #f00;
+    }
+    #pagina #cabecalho #logo-topo{
+        width: 200px;
+        height: 150px;
+        float: left;
+        background: #5f9ea0;
+    }
+    #pagina #cabecalho #menu-topo{
+        width: 800px;
+        height: 150px;
+        float: left;
+        background: #0f0;
+    }
+    #pagina #cabecalho #menu-icones{
+        width: 200px;
+        height: 150px;
+        float: left;
+        background: #00BFFF;
+    }
+    #pagina #corpo{
+        width: 100%;
+        float: left;
+        background: #f00;
+    }
+    #pagina #corpo #banner{
+        width: 100%;
+        height: 400px;
+        float: left;
+        background: #0ff;
+    }
+    #pagina #corpo #imagens{
+        width: 100%;
+        min-height: 400px;
+        float: left;
+        background: #ff0;
+    }
+    #pagina #corpo #imagens .fotos{
+        width: 380px;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        float: left;
+        background: #5f9ea0;
+    }
+    #pagina #corpo #informacoes{
+        width: 100%;
+        float: left;
+        background: #0ff;
+    }
+    #pagina #corpo #informacoes .foto-info{
+        width: 100%;
+        min-width: 200px;
+        float: left;
+        background: #0f0;
+    }
+    #pagina #corpo #informacoes .texto.info{
+        width: 50%;
+        min-height: 200px;
+        float: left;
+        background: #00f;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
